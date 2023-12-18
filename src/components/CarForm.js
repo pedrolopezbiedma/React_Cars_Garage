@@ -41,7 +41,6 @@ const CarForm = () => {
               type="number"
             />
           </div>
-          <div></div>
         </div>
         <div className="field">
           <button className="button is-link">Submit</button>

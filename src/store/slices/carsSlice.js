@@ -7,7 +7,9 @@ const carsSlice = createSlice({
     searchTerm: "",
   },
   reducers: {
-    changeSearchTerm(state, action) {},
+    changeSearchTerm(state, action) {
+      state.searchTerm = action.payload;
+    },
     addCar(state, action) {
       state.cars.push({ id: nanoid(), ...action.payload });
     },
