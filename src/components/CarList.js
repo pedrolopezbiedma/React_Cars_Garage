@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeCar } from "../store/slices/carsSlice";
+import { removeCar } from "../store";
 
 const CarList = () => {
   const dispatch = useDispatch();
