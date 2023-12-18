@@ -9,4 +9,5 @@ const store = configureStore({
     }
 });
 
+console.log('store is -->', store.getState())
 export { store };

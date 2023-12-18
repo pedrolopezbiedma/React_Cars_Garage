@@ -1,6 +1,16 @@
+import CarForm from './components/CarForm'
+import CarSearch from './components/CarSearch'
+import CarList from './components/CarList'
+import CarValue from './components/CarValue'
+
 const App = () => {
     return (
-        <h1>This is the app component</h1>
+        <div>
+            <CarForm />
+            <CarSearch />
+            <CarList />
+            <CarValue />
+        </div>
     )
 }
 

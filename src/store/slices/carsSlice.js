@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const carsSlice = createSlice({
     name: 'cars',
@@ -11,7 +11,7 @@ const carsSlice = createSlice({
 
         },
         addCar(state, action) {
-            
+            state.cars.push({ id: nanoid(), ...action.payload })
         },
         removeCar(state, action) {
 
